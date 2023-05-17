@@ -23,7 +23,8 @@ Step 5: In code editor open terminal and enter the commands "pip install virtual
 
 Step 5: pip install requirments.txt
 
-Step 6: In app.py, at line 33,34 add email and app password created in google. For creating new password, login to your google account then go to security, search for app passwords then create new in app select mail option and device as you wish.
+Step 6: In app.py, at line 33,34 add email and app password created in google. For creating new password, below link will helpful
+https://support.google.com/mail/answer/185833?hl=en
 
 Step 7: Run the code
 
