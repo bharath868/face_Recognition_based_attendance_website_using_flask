@@ -1,4 +1,5 @@
 Before running the code please follow the below steps.
+
 Step 1: Download xampp server and start Apache, Mysql
 Step 2: Create a database in mysql then create two tables as given in screenshots and add login details manually in teacher table to login
 Step 3: Git clone the code
