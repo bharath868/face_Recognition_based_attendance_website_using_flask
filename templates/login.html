@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" href="{{ url_for('static', filename='img/nacc.jpg') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Login</title>
+    </head>
+    <body>
+      <img style src="{{ url_for('static', filename='img/title.png') }}" alt ="title" class="center">
+      
+          <center>
+            <h1 >
+              <font size="7" color="grey">
+                 Welcome to Attendance Management
+                 
+              </font>
+            </h1>
+          </center>
+        </div>
+      
+        <center>
+          <hr>
+        </center>
+      
+        <div class="breaker">
+          <br />
+          
+        </div>
+      <center>
+        <div class="col33" >
+        <form action='/login' method="POST" enctype="multipart/form-data">
+          <br>
+            <h2 style="border-radius: 20px 20px 0px 0px;background-color: #f03a2d;color: white;padding: 10px;">login <i class="material-icons"></i></h2>
+            <label style="font-size: 20px;"><b>Enter mail</b></label>
+            <br>
+            <input type="text" id="usernamee" name='usernamee' pattern=".+@veltech.edu.in" style="font-size: 20px;margin-top:10px;margin-bottom:10px;" required>
+            <br>
+            <label style="font-size: 20px;"><b>Enter password</b></label>
+            <br>
+            <input type="password" id="passworde" name='passworde' style="font-size: 20px;margin-top:10px;margin-bottom:10px;" required>
+            <br>
+            <label style="font-size: 20px;"><b>Enter slot</b></label>
+            <br>
+            <input type="text" id="slot" name='slot' style="font-size: 20px;margin-top:10px;margin-bottom:10px;" required>
+            <br>
+            {% if mess%}
+    <div class="center" id="mess"><span>{{ mess }}</span></div>
+    {% endif %}
+            <button style="width: 232px;margin-top: 20px;font-size: 20px;" type='submit' class='btn btn-dark' class='btn btn-dark'>log in
+            </button>
+            <br>
+            
+        </form>
+    </div>
+    
+    </center>
+   <div class="footer">
+    <footer>
+      
+    </footer>
+  </div>
+</body>
+
+</html>
+   

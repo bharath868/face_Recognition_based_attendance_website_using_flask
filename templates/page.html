@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Veltech Attendance System</title>
+</head>
+<body class="page">
+    <center><img id="imk" src="{{ url_for('static', filename='img/title.png') }}" alt ="title" class="center">
+        <div class='mt-3 text-center'>
+        <h1 style="width: auto;margin: auto;color: rgb(243, 8, 20);padding: 1px;font-size: 40px; background-color: whitesmoke;">Face Recognition Based Attendance System</h1>
+        </div>
+    </center>
+    <div>
+        {% if mess%}
+        <div class="center" id="mess"><span>{{ mess }}</span></div>
+        {% endif %} 
+    
+    </div>
+    <div class="flex-container">
+        <div class="flex-child magenta">
+        <form action = "/student" method = "post">
+            <h2 style="color: rgb(127, 231, 113); ">Search by<b>Student</b></h2>
+            <input type="text" id="name" name='name' placeholder="enter student name"required>
+        <button style="width: 232px;margin-top: 20px;font-size: 20px;" type='submit' class='btn btn-dark' class='btn btn-dark'>Search</button>
+    </form></div>
+    <div class="flex-child green">
+        <form action = "/date" method = "post">
+          <h2 style="color: rgb(238, 129, 95); ">Search by<b>Date</b></h2>
+          <input type="text" id="date" name='date' placeholder="dd-Month-YYYY" required>
+          <button style="width: 232px;margin-top: 20px;font-size: 20px;" type='submit' class='btn btn-dark' class='btn btn-dark'>Search</button></form>
+        </div>
+        </div>
+        <div class="cool1">
+        <table style="background-color: white;">  
+            <tr>
+               <td><b>S.No.</b></td>
+                <td><b>Name</b></td>
+                <td><b>VTU NO</b></td>
+                <td><b>Subject</b></td>
+                <td><b>Student email</b></td>
+                <td><b>Teacher name</b></td>
+                <td><b>slot</b></td>
+                <td><b>time</b></td>
+                <td><b>date</b></td>
+            </tr>
+            {% if l %}
+            {% for i in range(l) %}
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{names[i]}}</td>
+                <td>{{rolls[i]}}</td>
+                <td>{{subjects[i]}}</td>
+                <td>{{emails[i]}}</td>
+                <td>{{teachers[i]}}</td>
+                <td>{{slots[i]}}</td>
+                <td>{{times[i]}}</td>
+                <td>{{dates[i]}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </table></div>
+        <a href="/home">
+            <button id="ji" type='submit' class='btn btn-primary'>Previous page</button>
+        </a>
+        <a style="text-decoration: none;max-width: 300px;" href="/sendmail">
+            <button id="jk" type='submit' class='btn btn-primary'>send mail</button>
+        </a>
+        <a href="/logout">
+            <button id="jj" type='submit' class='btn btn-primary'>logout</button>
+        </a>
+        </body>
+        </html>

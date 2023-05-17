@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#jj{
+    background-color: #fa0d0d;
+    font-size: 24px;font-weight: bold;border-radius: 10px;width:200px;padding: 10px;margin-top: 30px;margin-bottom: 30px; color:antiquewhite;
+
+}
+#ji{
+    background-color: #eea332;
+    font-size: 24px;font-weight: bold;border-radius: 10px;width:200px;padding: 10px;margin-top: 30px;margin-bottom: 30px; color:antiquewhite;
+}
+#kk{
+    background-color: #e623ab;
+    font-size: 24px;font-weight: bold;border-radius: 10px;width:200px;padding: 10px;margin-top: 30px;margin-bottom: 30px; color:antiquewhite;
+}
+#jk{
+    background-color: #32ee4b;
+}
+#hh1{
+    width: auto;
+    margin:  auto; 
+    background-color: burlywood; 
+    color: rgb(243, 63, 8);
+    padding: 11px;
+    font-size: 35px;
+}
+span{
+    font-size: 25px;
+    font-family: cursive;
+    color: white;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+#mess{
+    font-size: 20px;
+    color: #fff;
+    background-color: #0f0707;
+  text-align: center;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+   
+}
+.flex-container {
+    display: flex;
+    
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+    background-color: #f47c36;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+button{
+    box-shadow : 0 8px 16px 0
+    rgba(6, 189, 245, 0.897), 0 17px 50px 0
+    rgba(21, 235, 85, 0.911);
+    cursor: pointer;
+    font-size: 24px;font-weight: bold;
+    width:290px;padding: 10px;margin-top: 30px;margin-bottom: 30px;
+    background-color: #36c8f4;
+    border-radius: 25px;
+    
+}
+h5{
+    padding: 25px;
+}
+::placeholder { 
+    color: red;
+    opacity: 1;
+  }
+body {
+    background-image: url("/static/img/bgg.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.home{
+    background-image: url("/static/img/bgg.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page{
+    background-image: url("/static/img/logo_page.jpg");
+    background-size: contain;
+    font-family: sans-serif;
+    margin-top: 40px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+table {
+    border: 1px;font-family: arial, sans-serif;border-collapse: collapse;width: 86%; margin: auto;
+}
+
+td,
+th {
+    border: 1px solid black !important;padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+h1 span{
+    background-color: rgb(10, 150, 231);
+}
+#imk{
+    height: 200px;width:500px;
+}
+#btn{
+    font-size: 24px;font-weight: bold; border-radius: 10px;width:590px;padding: 10px;margin-top: 30px;margin-bottom: 30px;margin-right: 80px;float:right;
+}
+.col1{
+    border-radius: 20px;padding: 0px;background-color:rgb(211,211,211,0.5);margin:10px 10px 10px 10px; height: 510px; width: 48%; float: left;
+}
+.col2{
+    border-radius: 20px;padding: 0px;background-color:rgb(211,211,211,0.5);margin:10px 10px 10px 10px;height: 510px; width: 48%;float: right;
+}
+.col33{
+    border-radius: 20px;padding: 0px;background-color:rgb(211,211,211,0.5);margin:0px 10px 10px 10px;height: 450px;
+}
+h2{
+    border-radius: 20px 20px 0px 0px;background-color: #0b4c61;color: white;padding: 10px;
+}
+a{
+    text-decoration: none;  max-width: 800px;
+}
+#bt1{
+    font-size: 24px;font-weight: bold; border-radius: 10px;width:490px;padding: 10px;margin-top: 30px;margin-bottom: 30px;
+}
+table{
+    background-color: white;
+}
+.col{
+    border-radius: 20px;padding: 10px;background-color:rgba(178, 209, 40, 0.5);margin:0px 10px 10px 10px;height: 400px;
+}
+label{
+    font-size: 20px;
+}
+input{
+    font-size: 20px;margin-top:10px;margin-bottom:10px;
+}
+.cool{
+    border-radius: 20px;
+        background-color: #00669969;
+        color: #fff;
+        min-height: 520px;
+        min-width: 600px;
+        margin:0px 10px 10px 10px;
+        padding: 10px;
+        
+}
+.cool1{
+    border-radius: 20px;
+        background-color: #00669969;
+        margin:0px 10px 10px 10px;
+        padding: 10px;
+}

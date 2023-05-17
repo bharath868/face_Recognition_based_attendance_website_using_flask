@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>VELTECH Attendance System</title>
+</head>
+
+<body class="home">
+    <img src="{{ url_for('static', filename='img/title.png') }}" alt ="title" class="center" id="imk">
+    <div class="msg">{{ msg }}</div>
+    <center>
+        <div class='mt-3 text-center'>
+            <h1 id="hh1">Face Recognition Based Attendance System</h1>
+        </div>
+    </center>
+    {% if mess%}
+    <div class="center" id="mess"><span>{{ mess }}</span></div>
+    {% endif %}
+    <div class="row text-center" style="padding: 20px;margin: 20px;">
+        <div class="col">
+            <h2>Today's Attendance </h2>
+            <a  href="/start">
+                <button type='submit' id="bt1" class='btn btn-primary'>Take Attendance through webcam</button>
+            </a>  
+            <a href="/start1">
+                <button type='submit' id="btn" class='btn btn-primary'>Take Attendance through webcam one by one</button>
+            </a>  
+            <table>
+                <tr>
+                   <td><b>S.No.</b></td>
+                    <td><b>Name</b></td>
+                    <td><b>VTU NO</b></td>
+                    <td><b>Subject</b></td>
+                    <td><b>Student email</b></td>
+                    <td><b>Teacher name</b></td>
+                    <td><b>slot</b></td>
+                    <td><b>time</b></td>
+                    <td><b>date</b></td>
+                </tr>
+            
+                {% if l %}
+            
+                {% for i in range(l) %}
+                <tr>
+                    
+                    
+                    <td>{{i+1}}</td>
+                    <td>{{names[i]}}</td>
+                    <td>{{rolls[i]}}</td>
+                    <td>{{subjects[i]}}</td>
+                    <td>{{emails[i]}}</td>
+                    <td>{{teachers[i]}}</td>
+                    <td>{{slots[i]}}</td>
+                    <td>{{times[i]}}</td>
+                    <td>{{dates[i]}}</td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </table>
+        </div>
+        <div class="cool">
+        <div class="col1">
+            <form action='/add' method="POST" enctype="multipart/form-data">
+                <h2>Add Student manually</h2>
+                <label><b>Enter Student Name</b></label>
+                <br>
+                <input type="text" id="newusername" name='newusername' required>
+                <br>
+                <label><b>Enter vtu Id</b></label>
+                <br>
+                <input type="number" id="newusereid" name='newuserid' required>
+                <br>
+                <label><b>Enter vtu mail</b></label>
+                <br>
+                <input type="email" id="mail" name='mail' placeholder="enter only vtu mail"  pattern=".+@veltech.edu.in" required>
+                <br>
+                <!--pattern=".+@veltech.edu.in"-->
+
+                
+                <button  type='submit' class='btn btn-dark'>Add New Student</button>
+                <br>
+                <h5 ><i>Total Users in Database: {{totalreg}}</i></h5>
+            </form>
+        </div>
+            <div class="col2">
+            <form action='/addimg' method="POST" enctype="multipart/form-data">
+                <h2>Add Student by uploading image</h2>
+                <label><b>Enter Student Name</b></label>
+                <br>
+                <input type="text" id="newusername" name='newusername' required>
+                <br>
+
+                <label><b>Enter vtu Id*</b></label>
+                <br>
+                <input type="number" id="newusereid" name='newuserid' required>
+                <br>
+
+                <label><b>Enter vtu mail</b></label>
+                <br>
+                <input type="email" id="mail" name='mail' placeholder="enter only vtu mail"  pattern=".+@veltech.edu.in" pattern=".+@veltech.edu.in" required>
+                <br>
+                <!--pattern=".+@veltech.edu.in"-->
+                <label><b>Add image: </b></label>
+                <input name="img" type="file" accept="image/*" required/>
+                <br>
+                <button type='submit' class='btn btn-dark'>Add New Student</button>
+                <br>
+                <h5><i>Total Users in Database: {{totalreg}}</i></h5>
+            </form>
+        </div>
+    </div>
+</div>
+            <div><a href="/page">
+                <button id="ji" type='submit' class='btn btn-primary'>Next page</button>
+            </a>
+            <a href="/encoding">
+                <button id="kk" type='submit' class='btn btn-primary'>Encode</button>
+            </a>
+            <a href="/logout">
+                <button id="jj" type='submit' class='btn btn-primary'>logout</button>
+            </a>
+    </div>
+</body>
+</html>
