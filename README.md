@@ -3,9 +3,14 @@ Before running the code please follow the below steps.
 Step 1: Download xampp server and start Apache, Mysql
 
 Step 2: Create a database in mysql then create two tables as given in screenshots and add login details manually in teacher table to login
+database
+![db](https://github.com/bharath868/face__/assets/133846005/a0ee7f12-242b-417c-88b3-22280d4a209c)
+
 admin table
+![admin](https://github.com/bharath868/face__/assets/133846005/78eac063-b5c6-4ed6-91ab-74bf8b8031e1)
 
 attendance table
+![teacher](https://github.com/bharath868/face__/assets/133846005/75b46b76-eb4c-441f-a9fa-7262eea61749)
 
 Step 3: Git clone the code
 
