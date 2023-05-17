@@ -28,6 +28,8 @@ Step 5: pip install requirments.txt
 Step 6: In app.py, at line 33,34 add email and app password created in google. For creating new password, below link will helpful
 https://support.google.com/mail/answer/185833?hl=en
 
-Step 7: Run the code
+Step 7: While adding new student click "s" to capture and click "q" to exit. While taking attendance one by one click "e" to capture and press"q" to exit
+
+Step 8: Run the code
 
 
