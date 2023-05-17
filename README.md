@@ -5,6 +5,7 @@ Step 1: Download xampp server and start Apache, Mysql
 Step 2: Create a database in mysql then create two tables as given in screenshots and add login details manually in teacher table to login
 
 database
+
 ![db](https://github.com/bharath868/face__/assets/133846005/a0ee7f12-242b-417c-88b3-22280d4a209c)
 
 admin table
