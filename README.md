@@ -31,5 +31,7 @@ https://support.google.com/mail/answer/185833?hl=en
 Step 7: While adding new student click "s" to capture and click "q" to exit. While taking attendance one by one click "e" to capture and press"q" to exit
 
 Step 8: Run the code
+note: If  normal mail is using then remove pattern in username in login.html and in add student module in home.html
 
+OUTPUT SCREENSHOTS
 
