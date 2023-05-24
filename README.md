@@ -47,3 +47,5 @@ OUTPUT SCREENSHOTS
 ![ww](https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/42ec424c-2b5f-4f30-9e6c-ad78e306fec0)
 
 ![www](https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/73896cff-1c0f-47ce-a6de-221ddbddf84d)
+
+![Screenshot (355)](https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/7add3a56-12df-4d68-ad76-a57e056c9ee7)
