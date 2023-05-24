@@ -35,4 +35,15 @@ Step 8: Run the code
 note: If  normal mail is using then remove pattern in username in login.html and in add student module in home.html
 
 OUTPUT SCREENSHOTS
-https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/14d94c0c-c9af-4a07-a324-d02b6e80c090
+
+![q](https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/14d94c0c-c9af-4a07-a324-d02b6e80c090)
+
+![qqq](https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/7af61bc1-e9e7-46fe-bd68-4315f7e833fa)
+
+![qqqq](https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/ba67e641-f1c3-4cfc-9344-5d98e68e9416)
+
+![qqqqq](https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/a54f161d-0c84-4052-b084-966e1c6bf30b)
+
+![ww](https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/42ec424c-2b5f-4f30-9e6c-ad78e306fec0)
+
+![www](https://github.com/bharath868/face_Recognition_based_attendance_website_using_flask_/assets/133846005/73896cff-1c0f-47ce-a6de-221ddbddf84d)
