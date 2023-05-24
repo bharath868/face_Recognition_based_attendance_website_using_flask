@@ -16,7 +16,7 @@ admin table
 attendance table
 ![teacher](https://github.com/bharath868/face__/assets/133846005/75b46b76-eb4c-441f-a9fa-7262eea61749)
 
-Step 3: Git clone the code
+Step 3: Git clone the code and insert one row of teacher details in admin table because this details are used to login.
 
 Step 4: create to folders imgss, temp in static folder
 ![aa](https://github.com/bharath868/face__/assets/133846005/57096d1f-7e62-4ad2-8325-eb245371b153)
